@@ -1,0 +1,57 @@
+@options
+@packages
+-classpath
+'C:/Users/user/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar;C:/Users/user/.m2/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar;C:/Users/user/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'D:/Universidad/Proyecto de software/AplicativoCarros/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/Universidad/Proyecto de software/AplicativoCarros/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'AplicativoCarros 1.0 API'
+-linkoffline
+'https://docs.oracle.com/javase/7/docs/api' 'D:/Universidad/Proyecto de software/AplicativoCarros/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'AplicativoCarros 1.0 API'
+beans
+connection
+controller
+servlets
+test
+C:\Users\user\.m2\repository\javax\javaee-web-api\7.0\javaee-web-api-7.0.jar = 1679694207987
+C:\Users\user\.m2\repository\mysql\mysql-connector-java\5.1.46\mysql-connector-java-5.1.46.jar = 1681428556348
+C:\Users\user\.m2\repository\com\google\code\gson\gson\2.10\gson-2.10.jar = 1683851176094
+D:\Universidad\Proyecto de software\AplicativoCarros\src\main\java = 1685056555087
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\allclasses-index.html = 1685057310572
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\allclasses.html = 1685057310581
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\allpackages-index.html = 1685057310576
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\constant-values.html = 1685057310438
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\deprecated-list.html = 1685057310580
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\element-list = 1685057310385
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\help-doc.html = 1685057310595
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\index-all.html = 1685057310565
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\index.html = 1685057310587
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\jquery-ui.overrides.css = 1685057311000
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\member-search-index.js = 1685057310561
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\member-search-index.zip = 1685057310562
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\overview-summary.html = 1685057310590
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\overview-tree.html = 1685057310534
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\package-search-index.js = 1685057310556
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\package-search-index.zip = 1685057310559
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\script.js = 1685057310620
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\search.js = 1685057310637
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\serialized-form.html = 1685057310447
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\stylesheet.css = 1685057310608
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\type-search-index.js = 1685057310559
+D:\Universidad\Proyecto de software\AplicativoCarros\target\apidocs\type-search-index.zip = 1685057310560

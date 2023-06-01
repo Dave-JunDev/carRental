@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Index</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/691e44487d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="./css/login.css" rel="stylesheet">
+        <link href="./css/index.css" rel="stylesheet">
+        <script src="./js/login.js"></script>
+        <script src="./js/register.js"></script>
+    </head>
+  <body>
+    <header>
+        <nav class="navbar  navbar-expand-lg sticky-top navbar-dark bg-dark">
+           <div class="container-fluid">
+               <a class="navbar-brand" href="#">Renta Autos</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Login</a>
+                        </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+   </header>
+
+   
+
+   <main>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="..." id="img-banner">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner2.jpg" class="d-block w-100" alt="..." id="img-banner">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner3.jpg" class="d-block w-100" alt="..." id="img-banner">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+        <form class="form-login" id="form">
+            <h2>Welcome!</h2>
+           <div class="row mb-3">
+               <label for="username" class="col-sm-12  col-form-label">Username</label>
+               <div class="col-sm-12">
+                   <input type="text" class="form-control" id="username" name="username" required>
+               </div>
+           </div>
+           <div class="row mb-3">
+               <label for="password" class="col-sm-12  col-form-label">Password</label>
+               <div class="col-sm-12">
+                   <input type="password" class="form-control" id="password" name="password" required>
+               </div>
+           </div>
+           <div class="alert alert-danger d-none" id="errorLogin">
+            <p>Username or password incorrect</p>
+          </div>
+
+           <div class="buttons">
+               <button type="submit" class="btn btn-primary" id="signIn">Sign in</button>
+               <button type="button" class="btn btn-primary mt-6" data-bs-toggle="modal" data-bs-target="#register" id="Registrar">Create account</button>           
+          </div>
+       </form>
+   </main>
+
+  <div class="modal fade show" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;"
+    aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Formulario de registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="register-Form" id="createUser">
+            <input class="form-control mb-3" type="text" placeholder="Names" name="name" id="name" required="">
+            <input class="form-control mb-3" type="text" placeholder="Last name" name="lastname1" id="lastname1" required="">
+            <input class="form-control mb-3" type="text" placeholder="middle name" name="lastname2" id="lastname2">
+
+            <input class="form-control mb-3" type="email" placeholder="example@example.com" name="email" id="email"
+              required="">
+            <input class="form-control mb-3" type="text" placeholder="username" name="username" id="usernameC" required="">
+            <label>Contraseña: </label>
+            <input class="form-control mb-3" type="password" placeholder="*****" name="Pass1" id="pass1" required="">
+            <label>Confirmar contraseña: </label>
+            <input class="form-control mb-3" type="password" placeholder="*****" name="Pass2" id="pass2" required="">
+
+            <input type="submit" class="btn btn-primary" name="registrarU" id="createUser" value="Registrar">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <div class="alert alert-danger d-none" id="errorPassword">
+            <lable>Error the passwords are different</lable>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <footer class="text-center text-lg-start bg-dark text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span></span>
+      </div>
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fa-solid fa-car-side"></i> Renta Autos
+            </h6>
+            <p>
+              Somos una compañia que presta autos para la renta y alquiler de los mismos para viajar por Colombia.
+            </p>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Enlaces útiles
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Precios</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Normativa</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Ordenes</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Ayuda</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p><i class="fas fa-home me-3"></i> Colombia, Bogota</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@rentautos.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 57 304 567 808</p>
+            <p><i class="fas fa-print me-3"></i> + 57 304 567 809</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright Renta Autos
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>
